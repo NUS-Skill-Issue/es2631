@@ -1,0 +1,31 @@
+{
+  "code": "ES2631",
+  "title": "Critique and Communication of Thinking and Design",
+  "skill": ".",
+  "status": "experimental",
+  "capabilities": [
+    "framework tutoring",
+    "focused PEEL paragraphs",
+    "deck critique",
+    "draft feedback"
+  ],
+  "official_url": "https://www.nus.edu.sg/celc/undergraduate-courses/es2631-critique-and-communication-of-thinking-and-design/",
+  "course_context_checked_on": "2026-10-12",
+  "academic_year": null,
+  "semester": null,
+  "known_gaps": [
+    "current assignment briefs and detailed rubrics",
+    "term specific assessment and AI rules",
+    "dedicated oral presentation and teamwork workflows",
+    "host installation and discovery validation"
+  ],
+  "evaluation": "evals/es2631.md",
+  "schema_version": 1,
+  "organisation": {
+    "name": "NUS Skill Issue",
+    "github_url": "https://github.com/NUS-Skill-Issue",
+    "source": "Provided by the project owner on 2026-10-12"
+  },
+  "umbrella": "Skill Issue Labs",
+  "repository_name": "es2631"
+}

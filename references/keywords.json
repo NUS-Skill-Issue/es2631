@@ -1,0 +1,607 @@
+{
+ "_note": "Keyword bank for check_essay.py. Patterns are case-insensitive Python regexes. Keep in sync with references/standards-guide.md and references/elements-of-thought.md.",
+ "standards": {
+  "clarity": {
+   "name": [
+    {
+     "label": "clarity/clear",
+     "pattern": "\\bclar(ity)\\b|\\bclear(er|est|ly)?\\b"
+    }
+   ],
+   "anchors": [
+    {
+     "label": "elaborate",
+     "pattern": "\\belaborat\\w*"
+    },
+    {
+     "label": "example",
+     "pattern": "\\bexamples?\\b"
+    },
+    {
+     "label": "illustrate",
+     "pattern": "\\billustrat\\w*"
+    }
+   ],
+   "supporting": [
+    {
+     "label": "clarify",
+     "pattern": "\\bclarif\\w*"
+    },
+    {
+     "label": "in other words",
+     "pattern": "\\bin other words\\b"
+    },
+    {
+     "label": "concretely",
+     "pattern": "\\bconcret(e|ely)\\b"
+    },
+    {
+     "label": "for instance",
+     "pattern": "\\bfor instance\\b"
+    },
+    {
+     "label": "demonstrate",
+     "pattern": "\\bdemonstrat\\w*"
+    },
+    {
+     "label": "put simply",
+     "pattern": "\\b(put|stated) (simply|plainly)\\b|\\bin plain terms\\b"
+    },
+    {
+     "label": "meaning",
+     "pattern": "\\bmean(s|ing|t)?\\b"
+    },
+    {
+     "label": "analogy",
+     "pattern": "\\banalog\\w*"
+    },
+    {
+     "label": "picture",
+     "pattern": "\\bpictur\\w*"
+    },
+    {
+     "label": "unambiguous",
+     "pattern": "\\b(un)?ambiguous\\w*"
+    }
+   ]
+  },
+  "accuracy": {
+   "name": [
+    {
+     "label": "accuracy/accurate",
+     "pattern": "\\baccura(cy|te|tely)\\b"
+    }
+   ],
+   "anchors": [
+    {
+     "label": "check",
+     "pattern": "\\bcheck(s|ed|ing|able)?\\b"
+    },
+    {
+     "label": "verify",
+     "pattern": "\\bverif\\w*"
+    },
+    {
+     "label": "test",
+     "pattern": "\\btest(s|ed|ing|able)?\\b"
+    },
+    {
+     "label": "true/truth",
+     "pattern": "\\btru(e|th|ly)\\b"
+    },
+    {
+     "label": "find out",
+     "pattern": "\\b(find|found|finding) out\\b"
+    }
+   ],
+   "supporting": [
+    {
+     "label": "evidence",
+     "pattern": "\\bevidence\\w*"
+    },
+    {
+     "label": "data",
+     "pattern": "\\bdata\\b"
+    },
+    {
+     "label": "measured",
+     "pattern": "\\bmeasur\\w*"
+    },
+    {
+     "label": "confirm",
+     "pattern": "\\bconfirm\\w*"
+    },
+    {
+     "label": "corroborate",
+     "pattern": "\\bcorroborat\\w*"
+    },
+    {
+     "label": "source",
+     "pattern": "\\bsources?\\b|\\bsourced\\b"
+    },
+    {
+     "label": "reliable",
+     "pattern": "\\breliab\\w*"
+    },
+    {
+     "label": "error",
+     "pattern": "\\berrors?\\b|\\berroneous\\b"
+    },
+    {
+     "label": "validate",
+     "pattern": "\\bvalidat\\w*"
+    },
+    {
+     "label": "empirical",
+     "pattern": "\\bempiric\\w*"
+    },
+    {
+     "label": "cross-check",
+     "pattern": "\\bcross-check\\w*"
+    }
+   ]
+  },
+  "precision": {
+   "name": [
+    {
+     "label": "precision/precise",
+     "pattern": "\\bprecis(ion|e|ely)\\b"
+    }
+   ],
+   "anchors": [
+    {
+     "label": "specific",
+     "pattern": "\\bspecific(s|ally|ity)?\\b"
+    },
+    {
+     "label": "detail",
+     "pattern": "\\bdetail(s|ed)?\\b"
+    },
+    {
+     "label": "exact",
+     "pattern": "\\bexact(ly|ness)?\\b"
+    }
+   ],
+   "supporting": [
+    {
+     "label": "quantify",
+     "pattern": "\\bquantif\\w*"
+    },
+    {
+     "label": "measurement",
+     "pattern": "\\bmeasurements?\\b"
+    },
+    {
+     "label": "threshold",
+     "pattern": "\\bthresholds?\\b"
+    },
+    {
+     "label": "tolerance",
+     "pattern": "\\btoleranc\\w*"
+    },
+    {
+     "label": "defined",
+     "pattern": "\\b(well-)?defined\\b|\\bdefinition\\b"
+    },
+    {
+     "label": "narrowly",
+     "pattern": "\\bnarrow(ly|er)?\\b"
+    },
+    {
+     "label": "units",
+     "pattern": "\\bunits?\\b"
+    },
+    {
+     "label": "figure",
+     "pattern": "\\bfigures?\\b"
+    },
+    {
+     "label": "specification",
+     "pattern": "\\bspecification\\w*|\\bspec(s)?\\b"
+    }
+   ]
+  },
+  "relevance": {
+   "name": [
+    {
+     "label": "relevance/relevant",
+     "pattern": "\\b(ir)?relevan(ce|t|tly)\\b"
+    }
+   ],
+   "anchors": [
+    {
+     "label": "relate",
+     "pattern": "\\brelat(e|es|ed|ing|ion|ions|ionship)\\b"
+    },
+    {
+     "label": "bear on",
+     "pattern": "\\bbear(s|ing)? (directly )?on\\b|\\bbearing\\b|\\bbore on\\b"
+    },
+    {
+     "label": "problem",
+     "pattern": "\\bproblems?\\b"
+    },
+    {
+     "label": "question",
+     "pattern": "\\bquestions?\\b"
+    },
+    {
+     "label": "issue",
+     "pattern": "\\bissues?\\b"
+    }
+   ],
+   "supporting": [
+    {
+     "label": "pertinent",
+     "pattern": "\\bpertinen\\w*"
+    },
+    {
+     "label": "directly",
+     "pattern": "\\bdirectly\\b"
+    },
+    {
+     "label": "connection",
+     "pattern": "\\bconnect(s|ed|ion|ions)?\\b"
+    },
+    {
+     "label": "applies to",
+     "pattern": "\\bappl(y|ies|ied) to\\b"
+    },
+    {
+     "label": "at hand",
+     "pattern": "\\bat hand\\b"
+    },
+    {
+     "label": "germane",
+     "pattern": "\\bgermane\\b"
+    },
+    {
+     "label": "matters to",
+     "pattern": "\\bmatters? to\\b"
+    },
+    {
+     "label": "beside the point",
+     "pattern": "\\bbeside the point\\b"
+    }
+   ]
+  },
+  "depth": {
+   "name": [
+    {
+     "label": "depth/deep",
+     "pattern": "\\bdepth\\b|\\bdeep(er|ly)?\\b"
+    }
+   ],
+   "anchors": [
+    {
+     "label": "factor",
+     "pattern": "\\bfactors?\\b"
+    },
+    {
+     "label": "complex",
+     "pattern": "\\bcomplex(ity|ities)?\\b"
+    },
+    {
+     "label": "difficult",
+     "pattern": "\\bdifficult(y|ies)?\\b"
+    },
+    {
+     "label": "deal with",
+     "pattern": "\\bdeal(s|t|ing)? with\\b"
+    }
+   ],
+   "supporting": [
+    {
+     "label": "underlying",
+     "pattern": "\\bunderl(ying|ies)\\b"
+    },
+    {
+     "label": "root cause",
+     "pattern": "\\broot causes?\\b"
+    },
+    {
+     "label": "trade-off",
+     "pattern": "\\btrade-?offs?\\b"
+    },
+    {
+     "label": "constraint",
+     "pattern": "\\bconstrain\\w*"
+    },
+    {
+     "label": "interdependent",
+     "pattern": "\\binterdependen\\w*"
+    },
+    {
+     "label": "beneath the surface",
+     "pattern": "\\bbeneath the surface\\b"
+    },
+    {
+     "label": "compounding",
+     "pattern": "\\bcompound\\w*"
+    },
+    {
+     "label": "second-order",
+     "pattern": "\\bsecond-order\\b"
+    },
+    {
+     "label": "tension",
+     "pattern": "\\btensions?\\b"
+    }
+   ]
+  },
+  "breadth": {
+   "name": [
+    {
+     "label": "breadth/broad",
+     "pattern": "\\bbreadth\\b|\\bbroad(er|ly)?\\b"
+    }
+   ],
+   "anchors": [
+    {
+     "label": "perspective",
+     "pattern": "\\bperspectives?\\b"
+    },
+    {
+     "label": "point of view",
+     "pattern": "\\bpoints? of view\\b|\\bviewpoints?\\b"
+    },
+    {
+     "label": "other ways",
+     "pattern": "\\b(other|different) ways\\b"
+    },
+    {
+     "label": "consider",
+     "pattern": "\\bconsider(s|ed|ing|ation|ations)?\\b"
+    }
+   ],
+   "supporting": [
+    {
+     "label": "alternatively",
+     "pattern": "\\balternative\\w*"
+    },
+    {
+     "label": "stakeholder",
+     "pattern": "\\bstakeholders?\\b"
+    },
+    {
+     "label": "lens",
+     "pattern": "\\blens(es)?\\b"
+    },
+    {
+     "label": "standpoint",
+     "pattern": "\\bstandpoints?\\b"
+    },
+    {
+     "label": "angle",
+     "pattern": "\\bangles?\\b"
+    },
+    {
+     "label": "competing",
+     "pattern": "\\bcompeting\\b"
+    },
+    {
+     "label": "discipline",
+     "pattern": "\\bdisciplin\\w*"
+    },
+    {
+     "label": "on the other hand",
+     "pattern": "\\bon the other hand\\b"
+    }
+   ]
+  },
+  "logic": {
+   "name": [
+    {
+     "label": "logic/logical",
+     "pattern": "\\blogic(al|ally)?\\b|\\billogical\\b"
+    }
+   ],
+   "anchors": [
+    {
+     "label": "make sense",
+     "pattern": "\\bmak(e|es|ing) sense\\b|\\bmade sense\\b"
+    },
+    {
+     "label": "reasonable",
+     "pattern": "\\breasonabl\\w*"
+    },
+    {
+     "label": "follow from",
+     "pattern": "\\bfollow(s|ed)? (directly |logically )?from\\b|\\bit follows\\b"
+    },
+    {
+     "label": "evidence",
+     "pattern": "\\bevidence\\w*"
+    }
+   ],
+   "supporting": [
+    {
+     "label": "therefore",
+     "pattern": "\\btherefore\\b"
+    },
+    {
+     "label": "consequently",
+     "pattern": "\\bconsequently\\b"
+    },
+    {
+     "label": "consistent",
+     "pattern": "\\b(in)?consisten\\w*"
+    },
+    {
+     "label": "contradiction",
+     "pattern": "\\bcontradict\\w*"
+    },
+    {
+     "label": "premise",
+     "pattern": "\\bpremises?\\b"
+    },
+    {
+     "label": "conclusion",
+     "pattern": "\\bconclu(de|des|ded|sion|sions)\\b"
+    },
+    {
+     "label": "infer",
+     "pattern": "\\binfer(s|red|ence|ences)?\\b"
+    },
+    {
+     "label": "coherent",
+     "pattern": "\\bcoheren\\w*"
+    },
+    {
+     "label": "valid",
+     "pattern": "\\bvalid(ity)?\\b"
+    }
+   ]
+  },
+  "significance": {
+   "name": [
+    {
+     "label": "significance/significant",
+     "pattern": "\\b(in)?significan(ce|t|tly)\\b"
+    }
+   ],
+   "anchors": [
+    {
+     "label": "important",
+     "pattern": "\\bimportan(t|ce)\\b"
+    },
+    {
+     "label": "central",
+     "pattern": "\\bcentral(ly)?\\b"
+    },
+    {
+     "label": "focus",
+     "pattern": "\\bfocus(es|ed|ing)?\\b"
+    },
+    {
+     "label": "most important",
+     "pattern": "\\bmost important\\b"
+    }
+   ],
+   "supporting": [
+    {
+     "label": "priority",
+     "pattern": "\\bprioriti?\\w*"
+    },
+    {
+     "label": "outweigh",
+     "pattern": "\\boutweigh\\w*"
+    },
+    {
+     "label": "matters most",
+     "pattern": "\\bmatters? most\\b"
+    },
+    {
+     "label": "essential",
+     "pattern": "\\bessential\\w*"
+    },
+    {
+     "label": "fundamental",
+     "pattern": "\\bfundamental\\w*"
+    },
+    {
+     "label": "primary",
+     "pattern": "\\bprimar(y|ily)\\b"
+    },
+    {
+     "label": "core",
+     "pattern": "\\bcore\\b"
+    },
+    {
+     "label": "consequence",
+     "pattern": "\\bconsequences?\\b"
+    },
+    {
+     "label": "weight",
+     "pattern": "\\bweigh(t|ts|s|ed|ing)?\\b"
+    },
+    {
+     "label": "at stake",
+     "pattern": "\\bat stake\\b"
+    }
+   ]
+  },
+  "fairness": {
+   "name": [
+    {
+     "label": "fairness/fair",
+     "pattern": "\\b(un)?fair(ness|ly)?\\b"
+    }
+   ],
+   "anchors": [
+    {
+     "label": "good faith",
+     "pattern": "\\bgood faith\\b"
+    },
+    {
+     "label": "accurately represent",
+     "pattern": "\\b(accurate(ly)?|fair(ly)?|mis)\\s?represent\\w*|\\brepresent(s|ed|ing|ation)?\\b"
+    },
+    {
+     "label": "views of others",
+     "pattern": "\\bviews? of (others|opponents|critics|those)\\b|\\bothers'? views?\\b|\\bopposing views?\\b|\\bviewpoints?\\b"
+    },
+    {
+     "label": "ethical",
+     "pattern": "\\bethic(s|al|ally)?\\b|\\bunethical\\b"
+    },
+    {
+     "label": "vested interest",
+     "pattern": "\\bvested interests?\\b"
+    }
+   ],
+   "supporting": [
+    {
+     "label": "bias",
+     "pattern": "\\bbias(es|ed)?\\b"
+    },
+    {
+     "label": "impartial",
+     "pattern": "\\bimpartial\\w*"
+    },
+    {
+     "label": "even-handed",
+     "pattern": "\\beven-handed\\w*"
+    },
+    {
+     "label": "self-interest",
+     "pattern": "\\bself-interest\\w*"
+    },
+    {
+     "label": "conflict of interest",
+     "pattern": "\\bconflicts? of interest\\b"
+    },
+    {
+     "label": "equitable",
+     "pattern": "\\bequitab\\w*|\\bequity\\b"
+    },
+    {
+     "label": "those affected",
+     "pattern": "\\bthose affected\\b"
+    },
+    {
+     "label": "concede",
+     "pattern": "\\bconce(de|des|ded|ding|ssion|ssions)\\b"
+    },
+    {
+     "label": "justice",
+     "pattern": "\\b(in)?justice\\b"
+    },
+    {
+     "label": "responsibility",
+     "pattern": "\\bresponsib\\w*"
+    }
+   ]
+  }
+ },
+ "elements": {
+  "purpose": "\\b(purpose|goal|aim|objective)s?\\b",
+  "question at issue": "\\bquestions? at issue\\b|\\b(key|central|guiding|research) question\\b|\\bthe question\\b|\\bproblem( statement)?\\b",
+  "point of view": "\\bpoints? of view\\b|\\bviewpoints?\\b|\\bperspectives?\\b|\\bframe of reference\\b|\\bstandpoints?\\b",
+  "information": "\\binformation\\b|\\bdata\\b|\\bevidence\\b|\\bfacts?\\b|\\bresults?\\b|\\bmeasurements?\\b|\\bfindings?\\b",
+  "interpretation & inference": "\\binferen\\w*|\\binfer(s|red)?\\b|\\binterpret\\w*|\\bconclu(sion|sions|des|ded|de)\\b|\\brecommendation\\w*",
+  "concepts": "\\bconcept\\w*|\\bdefin(e|es|ed|ition|itions)\\b|\\bprinciples?\\b|\\bmodels?\\b|\\btheor\\w*|\\bcriteri(a|on)\\b",
+  "assumptions": "\\bassum\\w*|\\bpresuppos\\w*|\\btak(en|es|ing) for granted\\b",
+  "implications & consequences": "\\bimplications?\\b|\\bconsequences?\\b|\\bimpacts?\\b|\\bramifications?\\b"
+ }
+}

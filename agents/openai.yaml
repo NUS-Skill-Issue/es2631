@@ -1,0 +1,4 @@
+interface:
+  display_name: "ES2631 | NUS Skill Issue"
+  short_description: "Reasoning, evidence and critique for ES2631"
+  default_prompt: "Use $es2631 to review my critique against the question, brief and supplied evidence."
