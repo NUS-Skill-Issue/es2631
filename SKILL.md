@@ -1,5 +1,6 @@
 ---
 name: es2631
+license: MIT
 description: Explain and apply the ES2631 engineering reasoning framework to statements, slide decks and draft critiques. Use for ES2631 questions, focused PEEL paragraphs, evidence checks and critique revisions. Apply only the standards and format relevant to the user's task and current brief.
 ---
 

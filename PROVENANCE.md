@@ -10,11 +10,13 @@ The original archive is preserved outside this project. This working copy revise
 
 The [NUS CELC course page](https://www.nus.edu.sg/celc/undergraduate-courses/es2631-critique-and-communication-of-thinking-and-design/) was checked on 12 October 2026 for the title and broad learning context. Framework source links and edition caveats are in [course context](references/course-context.md). No current Canvas brief, detailed rubric or marked student work was supplied.
 
-The project owner identifies [NUS Skill Issue](https://github.com/NUS-Skill-Issue) as an existing GitHub organisation under Skill Issue Labs, with one independent repository and skill per module. Prior project context also identifies Overkill as a Skill Issue Labs product. No current GitHub repository state is asserted here.
+The project owner identifies [NUS Skill Issue](https://github.com/NUS-Skill-Issue) as a GitHub organisation under Skill Issue Labs, with one independent repository and skill per module. The public [ES2631 repository](https://github.com/NUS-Skill-Issue/es2631) was verified on 12 October 2026. The README visual direction follows the owner's [Overkill project](https://github.com/pizziyicato/overkill). Its new artwork and generation records are described in [assets/README.md](assets/README.md).
 
 ## Attribution and distribution
 
-The uploaded archive did not include a licence. One original style reference named third party writing skills without bundling their licence text or exact source versions. The replacement voice guide is written for this package and does not claim those skills were inspected. The archive's script and vocabulary provenance still needs confirmation before selecting a redistribution licence. No licence is silently inherited from a different Skill Issue Labs product.
+The project owner selected the [MIT licence](LICENSE) on 12 October 2026. The licence applies to rights held by the project contributors or that they are authorised to license. It does not relicense third party course materials or the underlying framework publications.
+
+The uploaded archive did not include a licence file. Its original authorship and the script and vocabulary provenance were not independently established. Selecting MIT does not establish rights in third party material. One original style reference named third party writing skills without bundling their licence text or exact source versions. The replacement voice guide was written for this package and does not claim those skills were inspected.
 
 The package contains no original NUS slides, assignment documents, student submissions or copied framework textbook. Synthetic examples are labelled. The framework's authors remain credited in course context.
 
